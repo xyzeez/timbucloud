@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Button from '../components/Button';
 
 const Checkout = () => {
@@ -180,9 +181,9 @@ const Checkout = () => {
         </div>
         <div className="flex flex-col gap-4 items-center lg:col-start-2 lg:col-end-3 lg:row-start-2 lg:row-end-3">
           <Button>Complete Purchase</Button>
-          <a href="" className="underline">
+          <Link to="/cart" className="underline">
             Back to Cart
-          </a>
+          </Link>
         </div>
       </section>
     </div>

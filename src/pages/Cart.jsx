@@ -1,7 +1,10 @@
+import { useNavigate } from 'react-router-dom';
 import Button from '../components/Button';
 import Rating from '../components/rating';
 
 const Cart = () => {
+  const navigate = useNavigate();
+
   return (
     <main className="px-4 pb-6">
       <section>
@@ -206,7 +209,9 @@ const Cart = () => {
               </p>
             </div>
             <div className="border-t flex justify-center py-8">
-              <Button>Proceed to Checkout</Button>
+              <Button clickHandler={() => navigate('/checkout')}>
+                Proceed to Checkout
+              </Button>
             </div>
           </div>
         </div>

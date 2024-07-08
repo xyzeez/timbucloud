@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 import Logo from '../Logo';
 
 const NavBar = () => {
+  const navigate = useNavigate();
+
   return (
     <header className="flex flex-col items-center gap-y-2 px-4 py-3">
       <div className="grid grid-cols-2 sm:grid-cols-[1fr_auto] w-full gap-x-2 font-inter font-medium text-lg text-[#000000]/50">
@@ -22,7 +25,9 @@ const NavBar = () => {
       </div>
       <div className="flex flex-row items-center lg:grid lg:grid-cols-[auto_1fr_auto] gap-x-6 w-full">
         <Logo />
-        <button className="ml-auto sm:order-3 sm:m-0 lg:flex lg:flex-row-reverse lg:items-center lg:gap-4 lg:p-3 text-white text-center font-inter font-bold text-lg lg:bg-blue rounded">
+        <button
+          onClick={() => navigate('cart')}
+          className="ml-auto sm:order-3 sm:m-0 lg:flex lg:flex-row-reverse lg:items-center lg:gap-4 lg:p-3 text-white text-center font-inter font-bold text-lg lg:bg-blue rounded">
           <img src="/assets/cart.png" className="lg:hidden" alt="" />
           <img src="/assets/cart-dark.png" className="hidden lg:block" alt="" />
           <span className="hidden lg:inline ml-2 uppercase">Shopping Cart</span>
