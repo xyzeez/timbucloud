@@ -4,11 +4,7 @@ const Logo = ({ type = 'light' }) => {
   return (
     <Link to="/">
       <img
-        src={
-          type === 'dark'
-            ? '/public/assets/logo-dark.png'
-            : '/public/assets/logo.png'
-        }
+        src={type === 'dark' ? '/assets/logo-dark.png' : '/assets/logo.png'}
         alt=""
       />
     </Link>

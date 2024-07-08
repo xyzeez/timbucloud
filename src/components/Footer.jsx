@@ -76,7 +76,7 @@ const Footer = () => {
             <li>
               <a href="#">
                 <img
-                  src="/public/assets/facebook-icon.png"
+                  src="/assets/facebook-icon.png"
                   alt=""
                   className="size-6"
                 />
@@ -85,7 +85,7 @@ const Footer = () => {
             <li>
               <a href="#">
                 <img
-                  src="/public/assets/facebook-icon.png"
+                  src="/assets/facebook-icon.png"
                   alt=""
                   className="size-6"
                 />
@@ -94,7 +94,7 @@ const Footer = () => {
             <li>
               <a href="#">
                 <img
-                  src="/public/assets/facebook-icon.png"
+                  src="/assets/facebook-icon.png"
                   alt=""
                   className="size-6"
                 />
