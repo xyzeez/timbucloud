@@ -31,18 +31,15 @@ const NavBar = () => {
           <button className="sm:hidden">
             <img src="/assets/nav-open.png" alt="" />
           </button>
-          <ul className="hidden sm:flex sm:flex-row sm:gap-6 justify-between w-full font-inter font-medium text-lg uppercase">
+          <ul className="hidden sm:flex sm:flex-row sm:gap-14 justify-end w-full font-inter font-medium text-lg uppercase">
             <li>
               <a href="#">Products</a>
             </li>
             <li>
+              <a href="#">Category</a>
+            </li>
+            <li>
               <a href="#">Contact</a>
-            </li>
-            <li>
-              <a href="#">Affiliate</a>
-            </li>
-            <li>
-              <a href="#">Special</a>
             </li>
           </ul>
         </nav>
